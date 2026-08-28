@@ -123,25 +123,32 @@
             border-radius: 10px;
             border-right: 3px solid #c5a059;
         }
-        /* قسم الصور والخواطر */
+        /* تنسيق الصور والخواطر */
         .story-section {
             margin: 25px 0;
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-        .story-item {
+        .story-card {
             background: #fdf8f5;
             padding: 15px;
             border-radius: 12px;
             border: 1px solid #ebdcd0;
         }
-        .story-item p {
+        .story-card img {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #ebdcd0;
+        }
+        .story-card p {
             font-size: 14px;
             color: #70523f;
             line-height: 1.6;
-            margin-top: 10px;
-            margin-bottom: 0;
+            margin: 0;
         }
         .message-text {
             font-size: 18px;
@@ -248,12 +255,29 @@
                 </div>
 
                 <div class="story-section">
-                    <div class="story-item">
+                    
+                    <div class="story-card">
+                        <img src="1000441987.jpg" alt="صورة الدعوة">
                         <p>"وأنت الطريقُ، وأنت الصديقُ<br>وأنت الجهاتُ، وكل النظر..<br>سخيّ المودة، حُلو الطباع<br>حبيبُ الفؤاد، رفيقُ العمر"</p>
                     </div>
-                    <div class="story-item">
+
+                    <div class="story-card">
+                        <img src="1000441988.jpg" alt="صورة الدعوة">
                         <p>"لقد كان مجيئك مجيء السلام إلى قلبي."</p>
                     </div>
+
+                    <div class="story-card">
+                        <img src="1000441995.jpg" alt="صورة الدعوة">
+                    </div>
+
+                    <div class="story-card">
+                        <img src="1000442011.jpg" alt="صورة الدعوة">
+                    </div>
+
+                    <div class="story-card">
+                        <img src="1000442010.jpg" alt="صورة الدعوة">
+                    </div>
+
                 </div>
 
                 <div style="font-size: 16px; color: #5c4033; font-weight: bold; margin-top: 15px;">📅 13 / 9 / 2026</div>
@@ -297,13 +321,13 @@
             }, 600);
         }
 
-        // فتح الظرف تلقائياً بعد ثانية
+        // فتح الظرف تلقائياً بعد ثانية وربع
         window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 if(document.getElementById('lockScreen').style.display !== 'none') {
                     openInvitationManual();
                 }
-            }, 1200);
+            }, 1250);
         });
 
         // تاريخ الزفاف: 13 سبتمبر 2026
